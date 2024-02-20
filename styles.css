@@ -32,11 +32,12 @@ input{
   width: 30em;
 }
 button{
-  width: 20%;
-  height: 30px;
+  width: 10%;
+  height: 40px;
   margin-bottom: 10px;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 20px;
 
 }
 #button-plus{
@@ -44,6 +45,12 @@ button{
 }
 #button-minus{
   background-color: red;
+}
+#button-multiplication{
+  background-color: rgb(189, 96, 169);
+}
+#button-division{
+  background-color: rgb(147, 95, 186);
 }
 #calculate{
   width: 30%;

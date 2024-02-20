@@ -1,7 +1,10 @@
 const resultElement = document.getElementById('result');
 const btnPlus = document.getElementById('button-plus');
 const btnMinus = document.getElementById('button-minus');
-const resultBtn = document.getElementById('calculate')
+const resultBtn = document.getElementById('calculate');
+const multiplicationBtn = document.getElementById('button-multiplication');
+const divisionBtn = document.getElementById('button-division');
+
 const input1 = document.getElementById('input1');
 const input2 = document.getElementById('input2');
 let action = '+';
@@ -12,6 +15,12 @@ btnPlus.onclick = function() {
 
 btnMinus.onclick = function() {
   action = '-'
+}
+multiplicationBtn.onclick = function(){
+  action = '*'
+}
+divisionBtn.onclick = function(){
+  action = '/'
 }
 
 function printResult(result){
@@ -31,6 +40,12 @@ function computeNumbersWithAction(inp1, inp2, actionSymbol){
   }
   if (actionSymbol == '-'){
     return(num1 - num2);
+  }
+  if (actionSymbol == '*'){
+    return(num1 * num2)
+  }
+  if (actionSymbol == '/'){
+    return(num1 / num2)
   }
 }
 
