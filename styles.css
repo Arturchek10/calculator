@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
 html{
   background-color: rgb(53, 53, 53);
+  transition: background-color 0.5s;
 }
 .main-div{
   font-family: 'Lora', serif;
@@ -101,4 +102,7 @@ nav{
 }
 h4{
   color: #fff;
+}
+#result{
+  font-size: 32px;
 }
