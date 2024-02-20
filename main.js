@@ -53,3 +53,11 @@ resultBtn.onclick = function(){
   const result = computeNumbersWithAction(input1, input2, action);
   printResult(result);
 }
+
+const bntOn = document.getElementById('btn');
+const back = document.documentElement;
+
+function toggleButton(){
+  bntOn.classList.toggle('active');
+  back.classList.toggle('on');
+}
